@@ -265,7 +265,7 @@ h4 {
 }
 
 .footer-col-2 img {
-    width: 180px;
+    width: 400px;
     margin-bottom: 20px;
 }
 
@@ -337,6 +337,7 @@ ul {
     }
 
     .logo-img {
+        width: 180px;
         display: none;
     }
 

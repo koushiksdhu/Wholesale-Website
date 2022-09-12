@@ -1,3 +1,15 @@
+var menuItems = document.getElementById("Menu-items")
+
+menuItems.style.maxHeight = "0px";
+
+function menutoggle() {
+    if (menuItems.style.maxHeight == "0px") {
+        menuItems.style.maxHeight = "200px";
+    }
+    else {
+        menuItems.style.maxHeight = "0px";
+    }
+}
 //script of Login and Signup Page
 
 const container1 = document.querySelector(".container1"),
@@ -47,4 +59,23 @@ function menutoggle() {
     }
 }
 
-
+var noti = document.querySelector('h1');
+	var select = document.querySelector('.select');
+	var button = document.getElementsByTagName('button');
+	for(var but of button){
+		but.addEventListener('click', (e)=>{
+			var add = Number(noti.getAttribute('data-count') || 0);
+			noti.setAttribute('data-count', add +1);
+			noti.classList.add('zero');
+        })
+    }
+    var parent = e.target.parentNode;
+			var clone = parent.cloneNode(true);
+			select.appendChild(clone);
+			clone.lastElementChild.innerText = "Buy-now";
+			
+			if (clone) {
+				noti.onclick = ()=>{
+					select.classList.toggle('display');
+				}	
+			}

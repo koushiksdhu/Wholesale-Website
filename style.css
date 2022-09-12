@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', 'Nunito', 'sans-serif';
+    font-family: 'Nunito', 'sans-serif';
 }
 
 .navbar {
@@ -49,6 +49,18 @@ p {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.col-4 .btn11 {
+    border-radius: 30px;
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin-left: 45px;
+    margin-right: 10px;
+
+
 }
 
 .col-2 {
@@ -253,7 +265,7 @@ h4 {
 }
 
 .footer-col-2 img {
-    width: 180px;
+    width: 400px;
     margin-bottom: 20px;
 }
 
@@ -357,6 +369,8 @@ ul {
 
     }
 }
+
+// Login and Signup page CSS styles
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
